@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 // CSS
+import './index.css';
 
 import {data} from './books'
 import SpecificBook from './Book'
@@ -19,5 +20,9 @@ function BookList() {
 }
 
 
+ReactDOM.render(
+  <BookList />,
+  document.getElementById('root')
+);
 
-ReactDom.render(document.getElementById('root'));
+// ReactDom.render(document.getElementById('root'));
